@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ingame3"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/clearButton"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:contentDescription="Clear"
+            android:padding="8dp"
+            android:src="@drawable/spkon"
+            app:layout_constraintBottom_toTopOf="@+id/linlay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <GridLayout
+            android:id="@+id/board"
+            android:layout_width="416dp"
+            android:layout_height="375dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.566"></GridLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/transparent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/board"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontregular"
+                android:text="Score: "
+                android:textColor="#FF0000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontregular"
+                android:gravity="start"
+
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:text=" 0"
+                android:textColor="#FF0000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontregular"
+                android:gravity="end"
+                android:text="Time: 60"
+                android:textColor="#FF0000"
+                android:textSize="28sp" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

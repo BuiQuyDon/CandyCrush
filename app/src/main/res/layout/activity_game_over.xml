@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gameover"
+    android:padding="16dp">
+
+    <!-- Hiển thị thông báo Game Over -->
+    <TextView
+        android:id="@+id/gameOverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over"
+        android:fontFamily="@font/fontregular"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FF0000"/>
+
+
+    <!-- Hiển thị điểm của người chơi -->
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score: 0"
+        android:fontFamily="@font/fontregular"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Nút để quay lại màn hình chính -->
+
+    <!-- Nút để xem High Score -->
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E3AA00"
+        android:fontFamily="@font/fontregular"
+        android:text="Play Again"
+        android:textColorLink="#DC1F1F" />
+
+    <Button
+        android:id="@+id/highScoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E3AA00"
+        android:fontFamily="@font/fontregular"
+        android:text="Highest Score" />
+
+</LinearLayout>
